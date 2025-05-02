@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.directpaydaylender.net
+
+# Sitemaps
+Sitemap: https://www.directpaydaylender.net/sitemap.xml
