@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.directpaydayloanlender.net
+Host: https://www.nativeamericanpaydayloans.com
 
 # Sitemaps
-Sitemap: https://www.directpaydayloanlender.net/sitemap.xml
+Sitemap: https://www.nativeamericanpaydayloans.com/sitemap.xml
