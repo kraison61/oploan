@@ -29,7 +29,7 @@ interface HeroProps {
 
 const Hero = ({ blog }: HeroProps) => {
   const {
-    heading = "10 Best Alternatives to Payday Loans for People with Poor Credit",
+    heading = `<h1>10 Best Alternatives to Payday Loans for People with Poor Credit</h1>`,
     content_heading = `Facing a cash crunch but worried your poor credit will hold you back?
 You’re not alone — millions of Americans find themselves stuck between a financial emergency and payday loan traps that only make things worse.
 

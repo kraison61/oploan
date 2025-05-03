@@ -2,7 +2,7 @@ const Logo = () => {
   return (
     <>
     <div className="text-[#003366]">
-    Native<span className="text-3xl md:text-4xl text-[#FFD233]">$</span>
+    Oploan<span className="text-3xl md:text-4xl text-[#FFD233]">$</span>
     </div>
     </>
   );

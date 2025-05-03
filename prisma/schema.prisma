@@ -15,7 +15,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model nativeamericanpaydayloans {
+model oploan {
   id              String   @id @default(auto()) @map("_id") @db.ObjectId
   title           String
   slug            String   @unique
