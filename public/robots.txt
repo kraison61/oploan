@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.nativeamericanpaydayloans.com
+Host: https://www.oploan.net
 
 # Sitemaps
-Sitemap: https://www.nativeamericanpaydayloans.com/sitemap.xml
+Sitemap: https://www.oploan.net/sitemap.xml
