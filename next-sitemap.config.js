@@ -1,17 +1,16 @@
 import { PrismaClient } from '@prisma/client';
 
-
 const prisma = new PrismaClient();
 
 const config = {
-  siteUrl: 'https://www.directpaydaylender.net',
+  siteUrl: 'https://www.directpaydayloanlender.net',
   generateRobotsTxt: true,
   exclude: [
     '/admin*',
     '/api*',
   ],
   additionalPaths: async () => {
-    const blogs = await prisma.directpaydaylenders.findMany({
+    const blogs = await prisma.directpaydayloanslenders.findMany({
       select: {
         slug: true,
       },
@@ -20,7 +19,7 @@ const config = {
     await prisma.$disconnect(); // Optional, clean up
 
     return blogs.map((post) => ({
-      loc: `/blog/${post.slug}`,
+      loc: `/${post.slug}`,
       changefreq: 'weekly',
       priority: 0.7,
     }));

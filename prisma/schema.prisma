@@ -15,7 +15,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model directpaydaylenders {
+model directpaydayloanslenders {
   id              String   @id @default(auto()) @map("_id") @db.ObjectId
   title           String
   slug            String   @unique
