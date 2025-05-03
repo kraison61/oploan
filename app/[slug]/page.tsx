@@ -12,24 +12,24 @@ import { getMainTable } from "@/lib/db";
 // ✅ ไม่ต้องใช้ Promise ใน type
 type Params = { slug: string };
 type Props = {
-  params: Promise<{ slug: string }>;
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
+
 
 // Return a list of `params` to populate the [slug] dynamic segment
 export async function generateStaticParams() {
-    try {
-      const blogs = await getMainTable().findMany();
-  
-      return blogs.map((blog) => ({
-        slug: blog.slug,
-      }));
-    } catch (error) {
-      console.error("Error fetching blogs:", error);
-      return []; // Or handle the error as appropriate for your application
-    }
-  }
+  try {
+    const blogs = await getMainTable().findMany();
 
+    return blogs.map((blog) => ({
+      slug: blog.slug,
+    }));
+  } catch (error) {
+    console.error("Error fetching blogs:", error);
+    return []; // Or handle the error as appropriate for your application
+  }
+}
 
 export async function generateMetadata(
   { params, searchParams }: Props,
@@ -39,7 +39,6 @@ export async function generateMetadata(
   const { slug } = await params;
 
   // fetch data
-  // const product = await fetch(`https://.../${id}`).then((res) => res.json())
   const blog = await getMainTable().findUnique({ where: { slug } });
 
   return {
@@ -63,22 +62,15 @@ export default async function Page(props: { params: Promise<Params> }) {
   for (let i = 21; i <= 29; i++) {
     const heading = data[`heading_${i}`];
     const content = data[`content_${i}`];
-    
+
     // เฉพาะส่วนที่มีทั้ง heading และ content จะถูกเพิ่มเข้าไป
     if (heading && content) {
       blogSection.push({
         heading,
-        content
+        content,
       });
     }
   }
-
-  // for (let i = 21; i <= 29; i++) {
-  //   blogSection.push({
-  //     heading: data[`heading_${i}`],
-  //     content: data[`content_${i}`],
-  //   });
-  // }
 
   return (
     <div className="overflow-hidden h-full">

@@ -100,7 +100,7 @@ const Nav = ({ openNav }: Props) => {
                   blogs.map((blog) => (
                     <Link
                       key={blog.id}
-                      href={`/blog/${blog.slug}`}
+                      href={`/${blog.slug}`}
                       className="block px-4 py-2 text-gray-800 hover:bg-blue-50 truncate"
                       onClick={() => setDropdownOpen(false)}
                     >

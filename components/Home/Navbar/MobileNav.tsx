@@ -76,7 +76,7 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
                   blogs.map((blog) => (
                     <li key={blog.id}>
                       <Link
-                        href={`/blog/${blog.slug}`}
+                        href={`/${blog.slug}`}
                         className="block px-4 py-2 hover:bg-blue-100 truncate"
                         onClick={() => {
                           setDropdownOpen(false);

@@ -1,6 +1,6 @@
 const page = () => {
   return (
-    <div className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#f7f6fb]">
+    <div className="w-full pt-[4vh] md:pt-[12vh] bg-[#f7f6fb]">
       <div className="flex items-center flex-col w-[90%] sm:w-[80%] h-full mx-auto">
         <div className="grid grid-cols-1 items-center gap-12 pt-[4vh]">
           <h1 className="mt-6 text-2xl md:text-3xl capitalize font-bold text-center">
