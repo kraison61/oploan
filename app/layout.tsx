@@ -10,11 +10,11 @@ const font = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "10 Best Payday Loan Alternatives (Even with Bad Credit)",
-  description: "Avoid high-cost payday loans. Discover 10 safe, fast, and trusted loan alternatives — even if you have poor credit. Get the help you need today.",
+  title: "Oop Loans: Everything You Need to Know About Opploans",
+  description: "Compare Oop loans and similar options like Opploans. Learn how they work, their safety, approval requirements, and whether they’re the right fit for you.",
   openGraph:{
-    title: "F10 Best Payday Loan Alternatives (Even with Bad Credit)",
-  description: "Avoid high-cost payday loans. Discover 10 safe, fast, and trusted loan alternatives — even if you have poor credit. Get the help you need today.",
+    title: "Oop Loans: Everything You Need to Know About Opploans",
+  description: "Compare Oop loans and similar options like Opploans. Learn how they work, their safety, approval requirements, and whether they’re the right fit for you.",
   type:"website",
   locale:"en_US",
   url:""
